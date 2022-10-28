@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import auth from '../components/data'
+import {auth} from '../components/data'
 
 const Authentication = (e) => {
 let [user,setUser] = useState('');
@@ -7,6 +7,9 @@ let [password,setPassword] = useState('');
     const verify = ()=>{
       if(auth.username === user && auth.password === password){
          console.log(user , password); }
+         else{
+          console.log('error')
+         }
      
   
   }

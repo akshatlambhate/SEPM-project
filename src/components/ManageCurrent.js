@@ -9,7 +9,7 @@ const ManageCurrent = (e) => {
        cusines:'',
        team:'',
        timing:'',
-       location:''
+       venue:''
     }
     const[value , setValue]=useState(initialValue);
 
@@ -37,8 +37,8 @@ const ManageCurrent = (e) => {
        <input className='focus: outline-none shadow-lg mb-2 px-24 py-2' type='text' name='team'  value={value.team} onChange={handleEvent}></input>
       <h1 className='text-white text-lg bg-black'>Timing of function</h1>
        <input className='focus: outline-none shadow-lg mb-2 px-24 py-2' type='text' name='timing'  value={value.timing} onChange={handleEvent}></input>
-      <h1 className='text-white text-lg bg-black'>function Location</h1>
-       <input className='focus: outline-none shadow-lg mb-2 px-24 py-2' type='text' name='location'  value={value.location} onChange={handleEvent}></input>
+      <h1 className='text-white text-lg bg-black'>venue</h1>
+       <input className='focus: outline-none shadow-lg mb-2 px-24 py-2' type='text' name='venue'  value={value.venue} onChange={handleEvent}></input>
        </div>
     </div>
   )

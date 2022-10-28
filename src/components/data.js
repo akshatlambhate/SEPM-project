@@ -1,11 +1,11 @@
  import React from 'react';
 
- const auth = {
+  export const auth = {
     username: 'akshatlambhate',
-     password: 'Akshat@1803'
+     password: '1234'
     }
    
- const event = [
+  export const event = [
       { title: 'birthday',
          current: [
            'Mohit roy Birthday',
@@ -40,7 +40,7 @@
       },
        
     ] 
-    export default {auth , event};
+   
     
     
 
