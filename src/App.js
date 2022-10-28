@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Authentication from '../src/components/Authentication';
+import SelectEvent from '../src/components/SelectEvent';
+import ChooseCurrent from './components/ChooseCurrent';
+import ManageCurrent from './components/ManageCurrent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Authentication /> */}
+      {/* <SelectEvent /> */}
+      {/* <ChooseCurrent /> */}
+      <ManageCurrent />
+       
     </div>
   );
 }

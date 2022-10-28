@@ -1,5 +1,17 @@
+
 .App {
   text-align: center;
+  margin: auto;
+  height: 100vh;
+  width: screen;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./components/SEPM\ collage.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
 .App-logo {
