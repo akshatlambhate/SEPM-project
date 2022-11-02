@@ -7,7 +7,7 @@
    
   export const event = [
       { title: 'birthday',
-         current: [
+       current: [
            'Mohit roy Birthday',
            'Anjali Singh Birthday',
            'Vishvas Jain Birthday',
@@ -40,6 +40,13 @@
       },
        
     ] 
+    const manage =[
+      { title:"",
+        name:'',
+
+      }
+    ]
+
    
     
     

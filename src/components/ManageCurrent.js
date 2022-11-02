@@ -15,7 +15,7 @@ const ManageCurrent = (e) => {
 
     const handleEvent=(e)=>{
         setValue({...value,[e.target.name]:e.target.value})
-        // console.log(value);
+        console.log(value);
 
     }
   return (
