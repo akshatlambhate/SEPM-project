@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import auth from '../components/data'
+import {auth} from '../components/data'
 
 const Authentication = (e) => {
 let [user,setUser] = useState('');

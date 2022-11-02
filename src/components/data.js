@@ -1,12 +1,12 @@
- import React from 'react';
-
- const auth = {
+ export const auth = {
     username: 'akshatlambhate',
      password: 'Akshat@1803'
     }
    
- const event = [
-      { title: 'birthday',
+ export const event = [
+      { 
+         id: 1,
+         title: 'birthday',
          current: [
            'Mohit roy Birthday',
            'Anjali Singh Birthday',
@@ -14,7 +14,9 @@
            'Kalam Khan Birthday',
          ],
       },
-      { title: 'Anniversary',
+      { 
+         id: 2,
+         title: 'Anniversary',
          current: [
            'Mohit roy Birthday',
            'Anjali Singh Birthday',
@@ -22,7 +24,9 @@
            'Kalam Khan Birthday',
          ],
       },
-      { title: 'Get-to-gether',
+      { 
+         id: 3,
+         title: 'Get-to-gether',
          current: [
            'Mohit roy Birthday',
            'Anjali Singh Birthday',
@@ -30,7 +34,9 @@
            'Kalam Khan Birthday',
          ],
       },
-      { title: 'marriage',
+      { 
+         id: 4,
+         title: 'marriage',
          current: [
            'Mohit roy Birthday',
            'Anjali Singh Birthday',
@@ -39,15 +45,4 @@
          ],
       },
        
-    ] 
-    export default {auth , event};
-    
-    
-
- 
- 
- 
- 
-
-
-
+] 
