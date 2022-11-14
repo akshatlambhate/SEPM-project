@@ -35,10 +35,10 @@ function App() {
   // </BrowserRouter>
     <div className="App">
       <Layout>
-        {/* <Authentication /> */}
+        <Authentication />
    {/* <SelectEvent /> */}
    {/* <ChooseCurrent />  */}
-     <About />
+     {/* <About /> */}
      {/* <ManageCurrent /> */}
       </Layout>
     
