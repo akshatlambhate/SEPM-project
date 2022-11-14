@@ -6,7 +6,7 @@
     }
    
   export const event = [
-      { title: 'birthday',
+      { title: 'Birthday',
        current: [
            'Mohit roy Birthday',
            'Anjali Singh Birthday',
@@ -22,7 +22,7 @@
            'Kalam Khan Birthday',
          ],
       },
-      { title: 'Get-to-gether',
+      { title: 'Get-together',
          current: [
            'Mohit roy Birthday',
            'Anjali Singh Birthday',
@@ -30,7 +30,7 @@
            'Kalam Khan Birthday',
          ],
       },
-      { title: 'marriage',
+      { title: 'Marriage',
          current: [
            'Mohit roy Birthday',
            'Anjali Singh Birthday',

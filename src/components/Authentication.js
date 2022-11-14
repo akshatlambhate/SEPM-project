@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 import {auth} from '../components/data'
+import login from '../components/login.jpg'
+import dancing from './dancing.json'
+import Lottie from 'lottie-react'
+import background from './background.json'
 
 const Authentication = (e) => {
 let [user,setUser] = useState('');
@@ -13,24 +17,46 @@ let [password,setPassword] = useState('');
      
   
   }
-  return (
-    <div className='flex flex-col'>
-    <div id='text' className='my-5 bg-black px-2 py-2 rounded-md'> <h1 className='font-extrabold text-white text-3xl '>please Login for Happy-Eve</h1></div>
-    <div id='maindiv' className='bg-white'>
-      <div className='border-2 border-black px-10 py-6'>
-        <div id='username' className='py-2'>
-            <label className='pr-4 text-xl font-semibold font-mono'> username</label>
-            <input type= 'text' className='border-2 border-black py-2 px-4 rounded-md focus:outline-none ' value={user} onChange={(e) => {setUser(e.target.value)}}></input>
+  return (<>
+    <div className='relative'>
+         <div className=' py-20'>
+            <div className="flex mx-auto shadow-2xl shadow-slate-500  bg-gray-50 w-fit">
+         <div  className="shadow-2xl flex flex-col align-middle w-fit px-10 py-5">
+             <div className="py-3">
+                 <h1 className="font-bold text-3xl font-serif">Login to Good Eve</h1>
+         </div>
+         <div className='px-10 py-6'>
+         <div id='username' className='py-2'>
+             <label className='pr-4 text-xl font-semibold font-mono'> username</label>
+                <input type= 'text' className='shadow-sm shadow-slate-800 py-2 px-4 rounded-md focus:outline-none ' value={user} onChange={(e) => {setUser(e.target.value)}}></input>
+                </div>
+           <div id='password' className='py-2'>
+               <label className='pr-4 text-xl font-semibold font-mono'> password</label>
+               <input type= 'password' className='shadow-sm shadow-slate-800 py-2 px-4 rounded-md focus:outline-none ' value={password} onChange={(e) => {setPassword(e.target.value)}}></input>
         </div>
-        <div id='password' className='py-2'>
-            <label className='pr-4 text-xl font-semibold font-mono'> password</label>
-            <input type= 'password' className='border-2 border-black py-2 px-4 rounded-md focus:outline-none ' value={password} onChange={(e) => {setPassword(e.target.value)}}></input>
-        </div>
-        <button type='submit' className='mt-5 px-4 py-2 border-slate-600 border-2 rounded-md bg-black text-white hover:bg-slate-900 ' onClick={verify}>Submit</button>
+        <button type='submit' className='mt-5 px-4 py-2 border-slate-600 border-2 rounded-md bg-black text-white hover:text-black hover:bg-gray-400 ' onClick={verify}>Submit</button>
       </div>
     </div>
+    <div className="">
+      <img src={login} className="w-72" />
+   </div>
     </div>
+    </div>
+        </div>
+      <div className=' absolute -top-10 left-20 w-72'>
+      <Lottie animationData={background} >
+      </Lottie>
+      </div>
+      <div className=' absolute top-64  right-0 w-96'>
+      <Lottie animationData={dancing} >
+      </Lottie>
+      </div>
+      </>
+         
+    
+  
   )
+
 
 }
 
