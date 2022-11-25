@@ -10,15 +10,16 @@ const Authentication = (e) => {
   let [user, setUser] = useState("");
   let [password, setPassword] = useState("");
   const verify = () => {
-    Axios.get("http://localhost:3001/users").then((response) => {
-      // setEmployeeList(response.data);
-      console.log(response.data)
+    console.log('clicked')
+     Axios.get("http://localhost:3010/users").then((response) => {
+       console.log(response.data);
+      
     });
-    if (auth.username === user && auth.password === password) {
-      console.log(user, password);
-    } else {
-      console.log("error");
-    }
+    // if (auth.username === user && auth.password === password) {
+    //   console.log(user, password);
+    // } else {
+    //   console.log("error");
+    // }
   };
   return (
     <>

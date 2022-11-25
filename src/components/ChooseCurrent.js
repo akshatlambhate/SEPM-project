@@ -18,7 +18,7 @@ const ChooseCurrent = () => {
       <div className="flex flex-col gap-3 mx-16 my-2">
         {event.map((data) => (
           <div className="flex  justify-between py- bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 shadow-sm">
-            <h1 className="text-white text-xl px-2 py-6">{data.current}</h1>
+            <h1 className="text-white text-xl px-2 py-6">{data.current[1]}</h1>
             <div className=" bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900 
             flex  justify-center items-center text-4xl  px-5 hover:bg-white hover:text-black">
               <button>
